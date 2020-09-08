@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/Melissa-Bredekamp/node-random-color-generator.git",
   "author": "Melissa Bredekamp",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "randomcolor": "^0.6.2"
+  }
 }
