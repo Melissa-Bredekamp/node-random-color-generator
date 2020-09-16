@@ -10,7 +10,19 @@ const color = randomColor({ hue: hue, luminosity: luminosity });
 
 const chalk = require('chalk');
 
-for (var i = 0; i < 3; i++) {
+function askFunction() {
+  if (typeof hue != 'red') {
+    ask1 = 'What hue are you searching for?';
+    console.log(ask1);
+  }
+  
+  else if (typeof luminosity != 'undefined)' {
+    ask2 = 'what luminosity are you searching for?';
+    console.log(ask2);
+  }
+
+else {
+  for (var i = 0; i < 3; i++) {
   console.log(chalk.hex(color)('##############################'));
 }
 
@@ -18,4 +30,5 @@ console.log(chalk.hex(color)('#########  ' + color + '  ##########'));
 
 for (var j = 0; j < 3; j++) {
   console.log(chalk.hex(color)('##############################'));
+}};
 }
